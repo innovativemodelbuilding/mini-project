@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Question Structures</title>
+    <!-- point to your question.css in the root css/ folder -->
+    <link rel="stylesheet" href="../../../css/question.css" />
+  </head>
+  <body>
+
+   <!-- Sticky Header -->
+    <div id="site-header-placeholder"></div>
+
+    <!-- Quiz Content -->
+    <main class="quiz-container">
+      <div class="question-section">
+        <h3 id="question-text">Loading...</h3>
+        <ul class="options" id="options-list">
+          <!-- Options dynamically generated -->
+        </ul>
+      </div>
+      <div id="feedback" class="hidden"></div>
+      <div id="explanation" class="hidden"></div>
+      <button id="back-btn" class="hidden" onclick="loadPreviousQuestion()">Back</button>
+      <button id="next-btn" class="hidden" onclick="loadNextQuestion()">Next</button>
+    </main>
+
+    <script>
+      const questions = [
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ are you late?</span>",
+    options: ["Why", "Where"],
+    correct: "Why",
+    explanation: "'Why' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ will you come?</span>",
+    options: ["when", "where"],
+    correct: "when",
+    explanation: "'when' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ are you happy?</span>",
+    options: ["why", "what"],
+    correct: "why",
+    explanation: "'why' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ is your best friend?</span>",
+    options: ["who", "how"],
+    correct: "how",
+    explanation: "'how' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ do you live?</span>",
+    options: ["where", "why"],
+    correct: "why",
+    explanation: "'why' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ is knocking at the door?</span>",
+    options: ["who", "how"],
+    correct: "how",
+    explanation: "'how' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ is your favorite color?</span>",
+    options: ["what", "where"],
+    correct: "what",
+    explanation: "'what' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ is your birthday?</span>",
+    options: ["who", "when"],
+    correct: "when",
+    explanation: "'when' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ is playing cricket?</span>",
+    options: ["who", "how"],
+    correct: "who",
+    explanation: "'who' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ are you crying?</span>",
+    options: ["why", "who"],
+    correct: "why",
+    explanation: "'why' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ are you going?</span>",
+    options: ["how", "where"],
+    correct: "where",
+    explanation: "'where' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ is knocking?</span>",
+    options: ["who", "where"],
+    correct: "where",
+    explanation: "'where' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ are you feeling?</span>",
+    options: ["how", "why"],
+    correct: "why",
+    explanation: "'why' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ is your teacher?</span>",
+    options: ["who", "why"],
+    correct: "why",
+    explanation: "'why' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ is your brother?</span>",
+    options: ["who", "when"],
+    correct: "when",
+    explanation: "'when' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ is playing outside?</span>",
+    options: ["who", "how"],
+    correct: "who",
+    explanation: "'who' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ is your name?</span>",
+    options: ["how", "who"],
+    correct: "who",
+    explanation: "'who' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ is your favorite teacher?</span>",
+    options: ["who", "when"],
+    correct: "when",
+    explanation: "'when' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ is coming to dinner?</span>",
+    options: ["when", "who"],
+    correct: "when",
+    explanation: "'when' is the correct question word."
+  },
+  {
+    question: "Complete the sentence with the best question word.<br><span style='color:black'>________ is your father?</span>",
+    options: ["when", "where"],
+    correct: "where",
+    explanation: "'where' is the correct question word."
+  }
+];
+
+
+    </script>
+
+    <!-- Professional Footer -->
+    <div id="site-footer-placeholder"></div>
+    <!-- point to your main quiz logic -->
+    <script src="../../../js/script.js"></script>
+    <script src="../../../js/partials.js"></script>
+  </body>
+</html>

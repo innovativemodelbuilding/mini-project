@@ -1,1 +1,1 @@
-# mini-project
+# NEW_LOYAL_QUIZ
